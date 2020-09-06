@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#search {
+    border-right: 1px gray solid;
+    padding: 8px;
+    height: 100%;
+}
