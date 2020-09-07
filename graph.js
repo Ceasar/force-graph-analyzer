@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         data.links.forEach(link => {
             edges[link.source] = edges[link.source] || {};
             edges[link.source][link.target] = true;
+
+            edges[link.target] = edges[link.target] || {};
+            edges[link.target][link.source] = true;
         });
 
         let searchedNode = null;
